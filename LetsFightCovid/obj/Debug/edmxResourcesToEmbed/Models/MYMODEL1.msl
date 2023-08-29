@@ -1,0 +1,16 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="LetsFightCovidModel1StoreContainer" CdmEntityContainer="LetsFightCovidEntities1">
+    <EntitySetMapping Name="OxygenProviders">
+      <EntityTypeMapping TypeName="LetsFightCovidModel1.OxygenProvider">
+        <MappingFragment StoreEntitySet="OxygenProvider">
+          <ScalarProperty Name="provider_ID" ColumnName="provider_ID" />
+          <ScalarProperty Name="provider_address" ColumnName="provider_address" />
+          <ScalarProperty Name="provider_contact" ColumnName="provider_contact" />
+          <ScalarProperty Name="available_stock" ColumnName="available_stock" />
+          <ScalarProperty Name="price_per_cylinder" ColumnName="price_per_cylinder" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>

@@ -1,0 +1,17 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="LetsFightCovidModel2.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2008" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+  <EntityType Name="Plasma">
+    <Key>
+      <PropertyRef Name="plasma_ID" />
+    </Key>
+    <Property Name="plasma_ID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="donor_name" Type="varchar(max)" Nullable="false" />
+    <Property Name="donor_address" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="blood_group" Type="varchar" MaxLength="8" Nullable="false" />
+    <Property Name="donor_contact" Type="varchar" MaxLength="11" Nullable="false" />
+    <Property Name="plasma_availability" Type="int" Nullable="false" />
+  </EntityType>
+  <EntityContainer Name="LetsFightCovidModel2StoreContainer">
+    <EntitySet Name="Plasma" EntityType="Self.Plasma" Schema="dbo" store:Type="Tables" />
+  </EntityContainer>
+</Schema>

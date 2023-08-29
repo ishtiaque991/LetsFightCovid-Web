@@ -1,0 +1,17 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="LetsFightCovidModel2" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+  <EntityType Name="Plasma">
+    <Key>
+      <PropertyRef Name="plasma_ID" />
+    </Key>
+    <Property Name="plasma_ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="donor_name" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="donor_address" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="blood_group" Type="String" MaxLength="8" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="donor_contact" Type="String" MaxLength="11" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="plasma_availability" Type="Int32" Nullable="false" />
+  </EntityType>
+  <EntityContainer Name="LetsFightCovidEntities2" annotation:LazyLoadingEnabled="true">
+    <EntitySet Name="Plasmas" EntityType="Self.Plasma" />
+  </EntityContainer>
+</Schema>
